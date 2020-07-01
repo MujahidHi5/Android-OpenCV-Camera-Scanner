@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/aashari/Workspaces/experimental/CameraScanner/openCVLibrary341/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
+ * Original file: D:\\Github\\android-opencv-camera-scanner\\openCVLibrary341\\src\\main\\aidl\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**
