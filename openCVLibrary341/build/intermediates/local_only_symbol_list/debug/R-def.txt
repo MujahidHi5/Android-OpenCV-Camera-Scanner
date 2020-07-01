@@ -36,6 +36,8 @@ id polygonView
 layout activity_image_crop
 layout activity_image_enhance
 layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
 string app_name
 style AppTheme
 styleable CameraBridgeViewBase show_fps camera_id
