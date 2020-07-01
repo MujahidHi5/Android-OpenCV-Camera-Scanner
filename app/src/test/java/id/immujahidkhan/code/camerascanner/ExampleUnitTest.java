@@ -1,4 +1,4 @@
-package id.aashari.code.camerascanner;
+package id.immujahidkhan.code.camerascanner;
 
 import org.junit.Test;
 

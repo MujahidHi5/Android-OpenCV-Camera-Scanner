@@ -10,8 +10,7 @@
       "apkData": {
         "type": "MAIN",
         "splits": [],
-        "versionCode": 3410,
-        "versionName": "3.4.1",
+        "versionCode": -1,
         "outputFile": "openCVLibrary341-debug.aar",
         "fullName": "debug",
         "baseName": "debug",
