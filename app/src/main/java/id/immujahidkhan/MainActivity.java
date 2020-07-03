@@ -91,4 +91,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (MyConstants.selectedImageBitmap != null) {
+            imageView.setImageBitmap(MyConstants.selectedImageBitmap);
+        }
+    }
 }

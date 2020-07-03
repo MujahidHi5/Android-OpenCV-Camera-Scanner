@@ -148,7 +148,7 @@ public class ImageCropActivity extends AppCompatActivity {
            /* //create new intent to start process image
             Intent intent = new Intent(getApplicationContext(), ImageEnhanceActivity.class);
             startActivity(intent);*/
-            finishAffinity();
+            onBackPressed();
 
         }
     };
