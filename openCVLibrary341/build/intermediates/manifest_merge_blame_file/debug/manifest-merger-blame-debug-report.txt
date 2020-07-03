@@ -13,7 +13,7 @@
 9-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:5:22-77
 10
 11    <application
-11-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:6:5-15:19
+11-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:6:5-19:19
 12        android:allowBackup="true"
 12-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:7:9-35
 13        android:icon="@mipmap/ic_launcher"
@@ -26,12 +26,18 @@
 16-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:11:9-35
 17        android:theme="@style/AppTheme" >
 17-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:12:9-40
-18        <activity android:name="org.opencv.customlib.ImageCropActivity" />
-18-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:9-75
-18-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:19-72
-19        <activity android:name="org.opencv.customlib.ImageEnhanceActivity" />
-19-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:9-78
-19-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:19-75
-20    </application>
-21
-22</manifest>
+18        <activity
+18-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:9-15:52
+19            android:name="org.opencv.customlib.ImageCropActivity"
+19-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:13-56
+20            android:screenOrientation="portrait" />
+20-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:15:13-49
+21        <activity
+21-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:16:9-18:52
+22            android:name="org.opencv.customlib.ImageEnhanceActivity"
+22-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:17:13-59
+23            android:screenOrientation="portrait" />
+23-->D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:18:13-49
+24    </application>
+25
+26</manifest>

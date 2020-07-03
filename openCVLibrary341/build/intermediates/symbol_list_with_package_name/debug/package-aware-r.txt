@@ -748,10 +748,12 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color appColor
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color blue
 color bottom_background_color
 color bright_foreground_disabled_material_dark
@@ -817,8 +819,13 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
+color grayBg
+color gray_hint
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightGray
+color light_grey
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -905,6 +912,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -919,8 +927,12 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color textColor
 color tooltip_background_dark
 color tooltip_background_light
+color unverified
+color verified
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1356,6 +1368,8 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_rotate_left
+drawable ic_baseline_rotate_right
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1481,6 +1495,7 @@ id coordinator
 id custom
 id customPanel
 id cut
+id dataBinding
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1525,6 +1540,8 @@ id line3
 id listMode
 id list_item
 id masked
+id menu_rotate_left
+id menu_rotate_right
 id message
 id mini
 id month_grid
@@ -1562,6 +1579,8 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id onAttachStateChangeListener
+id onDateChanged
 id outline
 id packed
 id parallax
@@ -1630,6 +1649,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textWatcher
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -1784,6 +1804,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu crop_image_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -1795,6 +1816,18 @@ string abc_activity_chooser_view_see_all
 string abc_activitychooserview_choose_application
 string abc_capital_off
 string abc_capital_on
+string abc_font_family_body_1_material
+string abc_font_family_body_2_material
+string abc_font_family_button_material
+string abc_font_family_caption_material
+string abc_font_family_display_1_material
+string abc_font_family_display_2_material
+string abc_font_family_display_3_material
+string abc_font_family_display_4_material
+string abc_font_family_headline_material
+string abc_font_family_menu_material
+string abc_font_family_subhead_material
+string abc_font_family_title_material
 string abc_menu_alt_shortcut_label
 string abc_menu_ctrl_shortcut_label
 string abc_menu_delete_shortcut_label

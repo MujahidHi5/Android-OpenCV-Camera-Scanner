@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-16:12
-INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-16:12
+ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:2:1-20:12
 	package
 		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:3:5-25
 		INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\And
 	android:name
 		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:6:5-15:19
+ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:6:5-19:19
 	android:supportsRtl
 		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:11:9-35
 	android:label
@@ -28,13 +28,17 @@ ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\And
 	android:theme
 		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:12:9-40
 activity#org.opencv.customlib.ImageCropActivity
-ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:9-75
+ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:9-15:52
+	android:screenOrientation
+		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:15:13-49
 	android:name
-		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:13:19-72
+		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:13-56
 activity#org.opencv.customlib.ImageEnhanceActivity
-ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:9-78
+ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:16:9-18:52
+	android:screenOrientation
+		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:18:13-49
 	android:name
-		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:14:19-75
+		ADDED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml:17:13-59
 uses-sdk
 INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Github\android-opencv-camera-scanner\openCVLibrary341\src\main\AndroidManifest.xml

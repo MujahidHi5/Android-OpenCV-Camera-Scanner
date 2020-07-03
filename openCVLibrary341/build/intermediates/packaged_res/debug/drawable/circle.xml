@@ -10,5 +10,5 @@
 
     <stroke
         android:width="@dimen/polygonViewStrokeWidth"
-        android:color="@color/polygonViewCircleStrokeColor"></stroke>
+        android:color="@color/polygonViewCircleStrokeColor" />
 </shape>

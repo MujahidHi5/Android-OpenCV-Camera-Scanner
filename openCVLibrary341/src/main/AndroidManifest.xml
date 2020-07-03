@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.opencv.customlib.ImageCropActivity" />
-        <activity android:name="org.opencv.customlib.ImageEnhanceActivity" />
+        <activity
+            android:name=".customlib.ImageCropActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".customlib.ImageEnhanceActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>

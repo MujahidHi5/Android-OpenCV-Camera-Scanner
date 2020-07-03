@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnOpenGallery;
     Button btnImageProcess;
-
     ImageView imageView;
-
     Uri selectedImage;
     Bitmap selectedBitmap;
 
@@ -62,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener btnImageProcessClick = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
             //save selected bitmap to our constants
             //this method will save the image to our device memory
             //so set this variable to null after the image is no longer used
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
             //create new intent to start process image
             Intent intent = new Intent(getApplicationContext(), ImageCropActivity.class);
             startActivity(intent);
-
         }
     };
 

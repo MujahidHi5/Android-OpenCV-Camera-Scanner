@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_rotate_left"
+        android:icon="@drawable/ic_baseline_rotate_left"
+        android:title="Rotate Left"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_rotate_right"
+        android:icon="@drawable/ic_baseline_rotate_right"
+        android:title="Rotate Right"
+        app:showAsAction="ifRoom" />
+</menu>

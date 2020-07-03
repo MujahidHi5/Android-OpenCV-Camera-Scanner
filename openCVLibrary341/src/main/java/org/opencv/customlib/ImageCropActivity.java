@@ -1,6 +1,5 @@
 package org.opencv.customlib;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -10,10 +9,17 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
+import com.google.android.material.button.MaterialButton;
 
 import org.opencv.R;
 import org.opencv.core.MatOfPoint2f;
@@ -28,30 +34,74 @@ import java.util.Map;
 import org.opencv.customlib.helpers.MyConstants;
 import org.opencv.customlib.libraries.NativeClass;
 import org.opencv.customlib.libraries.PolygonView;
+import org.opencv.databinding.ActivityImageCropBinding;
 
-public class ImageCropActivity extends Activity {
+public class ImageCropActivity extends AppCompatActivity {
 
     FrameLayout holderImageCrop;
     ImageView imageView;
     PolygonView polygonView;
     Bitmap selectedImageBitmap;
-    Button btnImageEnhance;
-
+    MaterialButton btnImageEnhance;
+    ActivityImageCropBinding binding;
     NativeClass nativeClass;
+    boolean rotateLeft = true;
+    boolean rotateRight = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_crop);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_image_crop);
         initializeElement();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+        }
+        /*if (item.getItemId() == R.id.menu_rotate_left) {
+            if (rotateLeft) {
+                rotateLeft = false;
+                rotateImage(90f);
+            } else {
+                rotateLeft = true;
+                rotateImage(180f);
+            }
+        }
+        if (item.getItemId() == R.id.menu_rotate_right) {
+            if (rotateRight) {
+                rotateRight = false;
+                rotateImage(270f);
+            } else {
+                rotateRight = true;
+                rotateImage(0f);
+            }
+        }*/
+        return super.onOptionsItemSelected(item);
+    }
+
+    /*@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.crop_image_menu, menu);
+        return true;
+    }*/
+
+    /**
+     * Rotate the image in the crop image view.
+     */
+    protected void rotateImage(float degrees) {
+        imageView.setRotation(degrees);
     }
 
     private void initializeElement() {
         nativeClass = new NativeClass();
-        btnImageEnhance = findViewById(R.id.btnImageEnhance);
-        holderImageCrop = findViewById(R.id.holderImageCrop);
-        imageView = findViewById(R.id.imageView);
-        polygonView = findViewById(R.id.polygonView);
+        btnImageEnhance = binding.btnImageEnhance;
+        holderImageCrop = binding.holderImageCrop;
+        imageView = binding.imageView;
+        polygonView = binding.polygonView;
 
         holderImageCrop.post(new Runnable() {
             @Override
@@ -95,9 +145,10 @@ public class ImageCropActivity extends Activity {
             //so set this variable to null after the image is no longer used
             MyConstants.selectedImageBitmap = getCroppedImage();
 
-            //create new intent to start process image
+           /* //create new intent to start process image
             Intent intent = new Intent(getApplicationContext(), ImageEnhanceActivity.class);
-            startActivity(intent);
+            startActivity(intent);*/
+            finishAffinity();
 
         }
     };
@@ -139,15 +190,15 @@ public class ImageCropActivity extends Activity {
 
     private List<PointF> getContourEdgePoints(Bitmap tempBitmap) {
         Log.v("aashari-tag", "getContourEdgePoints");
-
-        MatOfPoint2f point2f = nativeClass.getPoint(tempBitmap);
-        List<Point> points = Arrays.asList(point2f.toArray());
-
         List<PointF> result = new ArrayList<>();
-        for (int i = 0; i < points.size(); i++) {
-            result.add(new PointF(((float) points.get(i).x), ((float) points.get(i).y)));
-        }
+        MatOfPoint2f point2f = nativeClass.getPoint(tempBitmap);
+        if (point2f != null) {
+            List<Point> points = Arrays.asList(point2f.toArray());
 
+            for (int i = 0; i < points.size(); i++) {
+                result.add(new PointF(((float) points.get(i).x), ((float) points.get(i).y)));
+            }
+        }
         return result;
 
     }

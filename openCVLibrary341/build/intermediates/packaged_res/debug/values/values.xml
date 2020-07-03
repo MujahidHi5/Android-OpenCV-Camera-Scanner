@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="blue">#ff59a9ff</color>
+    <color name="appColor">#FF622AAF</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#FF622AAF</color>
     <color name="bottom_background_color">#ffc4c2bc</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff000000</color>
     <color name="colorGrey">#cccccc</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FF622AAF</color>
+    <color name="colorPrimaryDark">#FF622AAF</color>
+    <color name="gray">#e4e4e4</color>
+    <color name="grayBg">#85E4E4E4</color>
+    <color name="gray_hint">#CCCCCC</color>
+    <color name="lightGray">#d7d7d7</color>
+    <color name="light_grey">#bcbec0</color>
     <color name="orange">#ffff900d</color>
-    <color name="polygonViewCircleBackground">#90e5f8ff</color>
-    <color name="polygonViewCircleStrokeColor">#ff59a9ff</color>
+    <color name="polygonViewCircleBackground">#ffffffff</color>
+    <color name="polygonViewCircleStrokeColor">#FF622AAF</color>
+    <color name="red">#ffff0000</color>
+    <color name="textColor">#2F2F2F</color>
+    <color name="unverified">#DB0000</color>
+    <color name="verified">#529F00</color>
+    <color name="white">#ffffffff</color>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="bottom_bar_padding">15dp</dimen>
@@ -16,7 +28,7 @@
     <dimen name="polygonViewStrokeWidth">2dp</dimen>
     <dimen name="scanPadding">16dp</dimen>
     <string name="app_name">CameraScanner</string>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

@@ -2,8 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+    buildFeatures {
+        dataBinding = true
+        // for view binding :
+        // viewBinding = true
+    }
     defaultConfig {
-        applicationId "id.aashari.code.camerascanner"
+        applicationId "id.immujahidkhan.camerascanner"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
